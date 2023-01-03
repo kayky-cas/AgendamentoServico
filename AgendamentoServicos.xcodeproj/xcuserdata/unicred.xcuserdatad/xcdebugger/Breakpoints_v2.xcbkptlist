@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA6FAB9E-E018-4B74-83C0-82E68181EC98"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgendamentoServicos/View/Service/ServiceFormView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - 8d3df8f18f3a8e6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.mode.getter : AgendamentoServicos.ServiceMode"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - a4a7eeb15ec0da77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.mode.setter : AgendamentoServicos.ServiceMode"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - 2971c688def11568"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.mode.modify : AgendamentoServicos.ServiceMode"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - 8f5a82a126d3726e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.mode.modify : AgendamentoServicos.ServiceMode with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - 83290ee896f3824c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.init(frame: __C.CGRect) -&gt; AgendamentoServicos.ServiceFormView"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "8B8329C7-68C2-4B72-BCE8-033487BE5166 - 44cafcf79d5a415"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.ServiceFormView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AgendamentoServicos.ServiceFormView&gt;"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/Service/ServiceFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgendamentoServicos/View/SignUp/LoginFormView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "LoginFormView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - f718b1423c905a97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in variable initialization expression of AgendamentoServicos.LoginFormView.onChange : (Swift.Bool) -&gt; ()"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - c87ceb3de4eacf9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.onChange.getter : (Swift.Bool) -&gt; ()"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - c767af87a261828a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.onChange.setter : (Swift.Bool) -&gt; ()"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - b5ea2d2c5ade88d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.onChange.modify : (Swift.Bool) -&gt; ()"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - 19344f22c117f23c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.onChange.modify : (Swift.Bool) -&gt; () with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - 170ac6868bf604d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.init(frame: __C.CGRect) -&gt; AgendamentoServicos.LoginFormView"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "1D20075F-88AE-4B3D-A64F-625D5855A343 - 9558b12e5b0410b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendamentoServicos.LoginFormView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AgendamentoServicos.LoginFormView&gt;"
+                  moduleName = "AgendamentoServicos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/unicred/Code/AgendamentoServicos/AgendamentoServicos/View/SignUp/LoginFormView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
