@@ -15,7 +15,7 @@ class ServiceView: UIView {
 		
 		uiLabel.text = "Register a Service"
 		uiLabel.textColor = .tintColor
-		uiLabel.font = .boldSystemFont(ofSize: 35)
+		uiLabel.font = .boldSystemFont(ofSize: 30)
 		uiLabel.textAlignment = .center
 		
 		return uiLabel

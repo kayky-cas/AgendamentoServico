@@ -86,6 +86,8 @@ class ServicesViewController: BaseViewController, UICollectionViewDelegate, UICo
 
 		if let sheet = serviceViewController.sheetPresentationController {
 			sheet.detents = [.medium()]
+			sheet.preferredCornerRadius = 30
+			sheet.prefersGrabberVisible = true
 		}
 		
 		present(serviceViewController, animated: true, completion: nil)
