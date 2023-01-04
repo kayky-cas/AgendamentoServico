@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = LoginViewController()
 //        let rootViewController = HomeViewController()
 //        let rootViewController = SignUpViewController()
-
 //        let rootViewController = ServicesViewController()
 		
 		

@@ -157,7 +157,8 @@ class LoginView: UIView {
 
         loginButton.anchor(
                 bottom: signUpLabel.topAnchor,
-                padding: .init(top: 0, left: 0, bottom: 20, right: 0)
+                padding: .init(top: 0, left: 0, bottom: 20, right: 0),
+				size: .init(width: 150, height: 0)
         )
 
         loginButton.anchorCenterX(to: centerXAnchor)

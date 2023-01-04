@@ -30,7 +30,7 @@ class ServiceFormView: UIView {
 	lazy var typeLabel: UILabel = {
 		let uiLabel = UILabel()
 		
-		uiLabel.text = "Type:"
+		uiLabel.text = "Service type:"
 		uiLabel.textColor = .gray
 		
 		return uiLabel
@@ -68,6 +68,7 @@ class ServiceFormView: UIView {
 	}
 	
 	func setupConstraints() {
+		let inputSize = 186.5
 		
 		datePickerLabel.anchor(
 			top: topAnchor,
@@ -79,7 +80,8 @@ class ServiceFormView: UIView {
 		datePicker.anchor(
 			top: datePickerLabel.bottomAnchor,
 //			leading: leadingAnchor,
-			padding: .init(top: 5, left: 10, bottom: 0, right: 0)
+			padding: .init(top: 5, left: 10, bottom: 0, right: 0),
+			size: .init(width: inputSize, height: 0)
 		)
 		
 		datePicker.anchorCenterX(to: centerXAnchor)
@@ -92,9 +94,10 @@ class ServiceFormView: UIView {
 		)
 		
 		modeMenuButton.anchor(
-			top: typeLabel.topAnchor,
+			top: typeLabel.bottomAnchor,
 //			leading: leadingAnchor,
-			padding: .init(top: 5, left: 10, bottom: 0, right: 0)
+			padding: .init(top: 5, left: 10, bottom: 0, right: 0),
+			size: .init(width: inputSize, height: 0)
 		)
 		
 		modeMenuButton.anchorCenterX(to: centerXAnchor)

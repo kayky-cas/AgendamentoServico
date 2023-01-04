@@ -46,7 +46,7 @@ class ServiceView: UIView {
 			top: safeAreaLayoutGuide.topAnchor,
 			leading: leadingAnchor,
 			trailing: trailingAnchor,
-			padding: .init(top: 100, left: 0, bottom: 0, right: 0)
+			padding: .init(top: 0, left: 0, bottom: 0, right: 0)
 		)
 		
 		serviceFormView.anchor(
@@ -61,7 +61,8 @@ class ServiceView: UIView {
 		
 		registerButton.anchor(
 			top: serviceFormView.bottomAnchor,
-			padding: .init(top: 40, left: 0, bottom: 0, right: 0)
+			padding: .init(top: 40, left: 0, bottom: 0, right: 0),
+			size: .init(width: 150, height: 0)
 		)
 		
 		registerButton.anchorCenterX(to: centerXAnchor)

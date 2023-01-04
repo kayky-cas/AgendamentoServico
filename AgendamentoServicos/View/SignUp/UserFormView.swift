@@ -48,7 +48,7 @@ class UserFormView: UIView {
         let uiTextField = BaseUITextField()
 
         uiTextField.placeholder = "CPF"
-        uiTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        uiTextField.addTarget(self, action: #selector(cpfTextFieldDidChange), for: .editingChanged)
 
         return uiTextField
     }()
@@ -57,7 +57,7 @@ class UserFormView: UIView {
         let uiTextField = BaseUITextField()
 
         uiTextField.placeholder = "RG"
-        uiTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        uiTextField.addTarget(self, action: #selector(rgTextFieldDidChange), for: .editingChanged)
 
         return uiTextField
     }()
@@ -66,7 +66,7 @@ class UserFormView: UIView {
         let uiTextField = BaseUITextField()
 
         uiTextField.placeholder = "Phone number"
-        uiTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        uiTextField.addTarget(self, action: #selector(phoneTextFieldDidChange), for: .editingChanged)
 
         return uiTextField
     }()
@@ -139,7 +139,25 @@ class UserFormView: UIView {
                 padding: userInfoPadding
         )
     }
-
+	
+	@objc func cpfTextFieldDidChange() {
+		cpfTextField.text = formattedNumber(number: cpfTextField.text!, mask: "###.###.###-##")
+		
+		textFieldDidChange()
+	}
+	
+	@objc func rgTextFieldDidChange() {
+		rgTextField.text = formattedNumber(number: rgTextField.text!, mask: "#######")
+		
+		textFieldDidChange()
+	}
+	
+	@objc func phoneTextFieldDidChange() {
+		phoneTextField.text = formattedNumber(number: phoneTextField.text!, mask: "(##) # ####-####")
+		
+		textFieldDidChange()
+	}
+	
     @objc func textFieldDidChange() {
 		isValid = [
             nameTextField,
@@ -149,8 +167,6 @@ class UserFormView: UIView {
         ].first {
             $0.text == ""
         } == nil
-		
-		print("User \(isValid)")
 
         onChange()
     }

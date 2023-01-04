@@ -85,7 +85,7 @@ class SignUpView: UIView {
 
         signUpButton.anchor(
                 bottom: safeAreaLayoutGuide.bottomAnchor,
-                padding: .init(top: 0, left: 0, bottom: 30, right: 0)
+                padding: .init(top: 0, left: 0, bottom: 50, right: 0)
         )
 
         signUpButton.anchorCenterX(to: centerXAnchor)

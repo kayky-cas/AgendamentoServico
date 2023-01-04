@@ -49,7 +49,7 @@ class AddressFormView: UIView {
         let uiTextField = BaseUITextField()
 
         uiTextField.placeholder = "CEP"
-		uiTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+		uiTextField.addTarget(self, action: #selector(cepTextFieldDidChange), for: .editingChanged)
 
         return uiTextField
     }()
@@ -138,6 +138,12 @@ class AddressFormView: UIView {
         )
     }
 	
+	@objc func cepTextFieldDidChange() {
+		cepTextField.text = formattedNumber(number: cepTextField.text!, mask: "#####-###")
+		
+		textFieldDidChange()
+	}
+	
 	@objc func textFieldDidChange() {
 		isValid = [
 			streetTextField,
@@ -150,8 +156,6 @@ class AddressFormView: UIView {
 			$0.text == ""
 		} == nil
 		
-		print("Address \(isValid)")
-
 		onChange()
 	}
 }

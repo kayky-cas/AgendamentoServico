@@ -36,6 +36,7 @@
 		4DFA56DE29645CFE009E774F /* ServiceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56DD29645CFE009E774F /* ServiceFormView.swift */; };
 		4DFA56E02964697B009E774F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56DF2964697B009E774F /* ServicesViewController.swift */; };
 		4DFA56E329647350009E774F /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56E229647350009E774F /* ServiceCollectionViewCell.swift */; };
+		4DFA56E52965A181009E774F /* FormatterMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56E42965A181009E774F /* FormatterMask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		4DFA56DD29645CFE009E774F /* ServiceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFormView.swift; sourceTree = "<group>"; };
 		4DFA56DF2964697B009E774F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		4DFA56E229647350009E774F /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DFA56E42965A181009E774F /* FormatterMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterMask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBF83802962FF5F002F5114 /* UIView+Extension.swift */,
+				4DFA56E42965A181009E774F /* FormatterMask.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				4DBF83902962FF60002F5114 /* UserRepositoryMock.swift in Sources */,
 				4DBF83A429633EED002F5114 /* ServiceCardView.swift in Sources */,
 				4DFA56E02964697B009E774F /* ServicesViewController.swift in Sources */,
+				4DFA56E52965A181009E774F /* FormatterMask.swift in Sources */,
 				4DBF83912962FF60002F5114 /* UserViewModel.swift in Sources */,
 				4DBF839C2962FF60002F5114 /* LoginFormView.swift in Sources */,
 				4DBF839E2962FF60002F5114 /* SignUpView.swift in Sources */,

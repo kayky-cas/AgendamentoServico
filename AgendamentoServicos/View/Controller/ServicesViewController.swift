@@ -74,13 +74,19 @@ class ServicesViewController: BaseViewController, UICollectionViewDelegate, UICo
 	@objc func presentRegiseter() {
 		let serviceViewController = ServiceViewController()
 		
-		
 		serviceViewController.mode = mode
 		serviceViewController.updateCollectionView = {
 			self.collectionView.reloadData()
 		}
 		
-		present(serviceViewController, animated: true)
+		let nav = UINavigationController(rootViewController: serviceViewController)
+		nav.modalPresentationStyle = .pageSheet
+
+		if let sheet = nav.sheetPresentationController {
+			sheet.detents = [.medium()]
+		}
+		
+		present(nav, animated: true, completion: nil)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

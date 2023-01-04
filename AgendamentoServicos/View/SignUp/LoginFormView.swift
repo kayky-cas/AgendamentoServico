@@ -100,8 +100,6 @@ class LoginFormView: UIView {
 			$0.text == ""
 		} == nil && passwordTextField.text == confirmPasswordTextField.text
 		
-		print("Login \(isValid)")
-
 		onChange()
 	}
 }
