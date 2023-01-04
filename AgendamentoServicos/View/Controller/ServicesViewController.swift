@@ -79,14 +79,16 @@ class ServicesViewController: BaseViewController, UICollectionViewDelegate, UICo
 			self.collectionView.reloadData()
 		}
 		
-		let nav = UINavigationController(rootViewController: serviceViewController)
-		nav.modalPresentationStyle = .pageSheet
+		serviceViewController.modalPresentationStyle = .pageSheet
+//
+//		let nav = UINavigationController(rootViewController: serviceViewController)
+//		nav.modalPresentationStyle = .pageSheet
 
-		if let sheet = nav.sheetPresentationController {
+		if let sheet = serviceViewController.sheetPresentationController {
 			sheet.detents = [.medium()]
 		}
 		
-		present(nav, animated: true, completion: nil)
+		present(serviceViewController, animated: true, completion: nil)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
