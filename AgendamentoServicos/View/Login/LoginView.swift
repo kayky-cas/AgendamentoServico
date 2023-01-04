@@ -16,7 +16,7 @@ class LoginView: UIView {
 	
 	lazy var logoImageView: UIImageView = {
 		let imageView = UIImageView()
-		
+							
 		imageView.image = UIImage(systemName: "trash.fill")
 		imageView.contentMode = .scaleAspectFit
 		

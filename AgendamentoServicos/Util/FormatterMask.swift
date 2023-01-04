@@ -10,13 +10,13 @@ import Foundation
 // let mask = "###.###.###-##"
 
 func formattedNumber(number: String, mask: String) -> String {
-	let cleanCpf = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+	let cleanNumber = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
 	var result = ""
-	var index = cleanCpf.startIndex
-	for ch in mask where index < cleanCpf.endIndex {
+	var index = cleanNumber.startIndex
+	for ch in mask where index < cleanNumber.endIndex {
 		if ch == "#" {
-			result.append(cleanCpf[index])
-			index = cleanCpf.index(after: index)
+			result.append(cleanNumber[index])
+			index = cleanNumber.index(after: index)
 		} else {
 			result.append(ch)
 		}
