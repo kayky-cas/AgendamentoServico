@@ -10,11 +10,13 @@ import Foundation
 struct Service {
 	let start: Date
 	let mode: ServiceMode
+	let address: Address
 	let userEmail: String
 	
-	init(start: Date, mode: ServiceMode, userEmail: String) {
+	init(start: Date, mode: ServiceMode, address: Address, userEmail: String) {
 		self.start = start
 		self.mode = mode
+		self.address = address
 		self.userEmail = userEmail
 	}
 }

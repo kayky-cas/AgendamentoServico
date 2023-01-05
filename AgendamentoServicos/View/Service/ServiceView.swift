@@ -10,6 +10,8 @@ import UIKit
 class ServiceView: UIView {
 	var sendService: (Service) -> Void = { _ in }
 	
+	let userViewModel = UserViewModel.shared
+	
 	lazy var titleLabel: UILabel = {
 		let uiLabel = UILabel()
 		
@@ -36,32 +38,50 @@ class ServiceView: UIView {
 		return uiButton
 	}()
 	
+	lazy var addressFormView: AddressFormView = {
+		let view = AddressFormView()
+		
+		print(userViewModel.getUser()?.address)
+		view.address = userViewModel.getUser()?.address
+		
+		return view
+	}()
+	
 	func setup(mode: ServiceMode) {
-		addSubviews(titleLabel, serviceFormView, registerButton)
+		addSubviews(serviceFormView, addressFormView, registerButton)
 		serviceFormView.setup(mode: mode)
+		addressFormView.setup {
+			
+		}
 	}
 	
 	func setupConstraints() {
-		titleLabel.anchor(
-			top: safeAreaLayoutGuide.topAnchor,
-			leading: leadingAnchor,
-			trailing: trailingAnchor,
-			padding: .init(top: 30, left: 0, bottom: 0, right: 0)
-		)
-		
 		serviceFormView.anchor(
-			top: titleLabel.bottomAnchor,
-			padding: .init(top: 20, left: 0, bottom: 0, right: 0),
+			top: safeAreaLayoutGuide.topAnchor,
+			leading: safeAreaLayoutGuide.leadingAnchor,
+			bottom: safeAreaLayoutGuide.bottomAnchor,
+			trailing: safeAreaLayoutGuide.trailingAnchor,
+			padding: .init(top: 10, left: 30, bottom: 0, right: 30),
 			size: .init(width: frame.width - 100, height: 150)
 		)
 		
-		serviceFormView.anchorCenterX(to: centerXAnchor)
+//		serviceFormView.anchorCenterX(to: centerXAnchor)
 		
 		serviceFormView.setupConstraints()
 		
+		addressFormView.anchor(
+			top: serviceFormView.modeMenuButton.bottomAnchor,
+				leading: safeAreaLayoutGuide.leadingAnchor,
+				bottom: safeAreaLayoutGuide.bottomAnchor,
+				trailing: safeAreaLayoutGuide.trailingAnchor,
+			padding: .init(top: 10, left: 30, bottom: 0, right: 30)
+		)
+
+		addressFormView.setupConstraints()
+		
 		registerButton.anchor(
 			bottom: safeAreaLayoutGuide.bottomAnchor,
-			padding: .init(top: 0, left: 0, bottom: 40, right: 0),
+			padding: .init(top: 0, left: 0, bottom: 20, right: 0),
 			size: .init(width: 150, height: 0)
 		)
 		
@@ -72,6 +92,15 @@ class ServiceView: UIView {
 		let start = serviceFormView.datePicker.date
 		let mode = serviceFormView.mode
 		
-		sendService(.init(start: start, mode: mode, userEmail: UserViewModel.shared.getUser()!.email))
+		let address = Address(
+			street: addressFormView.streetTextField.text!,
+			district: addressFormView.districtTextField.text!,
+			city: addressFormView.cityTextField.text!,
+			cep: addressFormView.cepTextField.text!,
+			state: addressFormView.stateTextField.text!,
+			country: addressFormView.countryTextField.text!
+		)
+		
+		sendService(.init(start: start, mode: mode, address: address, userEmail: UserViewModel.shared.getUser()!.email))
 	}
 }

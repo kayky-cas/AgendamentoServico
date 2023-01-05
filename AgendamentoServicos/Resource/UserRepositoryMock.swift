@@ -13,12 +13,14 @@ class UserRepositoryMock {
 			birthDate: .init(),
 			cpf: "000.000.000-00",
 			rg: "",
-			street: "",
-			district: "",
-			city: "",
-			cep: "",
-			state: "",
-			country: "",
+			address: .init(
+				street: "Rua 8 de Julho",
+				district: "Jardim Botânico",
+				city: "Porto Alegre",
+				cep: "90690-240",
+				state: "Rio Grande do Sul",
+				country: "Brasil"
+			),
 			phone: "",
 			email: "kayky.casagrande@unicred.com.br",
 			password: "12345"

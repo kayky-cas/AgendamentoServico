@@ -9,6 +9,17 @@ class AddressFormView: UIView {
 	
 	var isValid = false
 	
+	var address: Address? {
+		didSet {
+			streetTextField.text = address?.street
+			districtTextField.text = address?.district
+			cityTextField.text = address?.city
+			cepTextField.text = address?.cep
+			stateTextField.text = address?.state
+			countryTextField.text = address?.country
+		}
+	}
+	
     lazy var addressLabel: UILabel = {
         let uiLabel = UILabel()
 

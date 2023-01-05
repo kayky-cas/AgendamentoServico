@@ -10,15 +10,19 @@ struct User {
     let cpf: String
     let rg: String
 
-    let street: String
-    let district: String
-    let city: String
-    let cep: String
-    let state: String
-    let country: String
+	let address: Address
 
     let phone: String
 
     let email: String
     let password: String
+}
+
+struct Address {
+	let street: String
+	let district: String
+	let city: String
+	let cep: String
+	let state: String
+	let country: String
 }

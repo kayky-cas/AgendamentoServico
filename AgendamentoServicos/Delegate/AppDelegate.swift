@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let rootViewController = HomeViewController()
 //        let rootViewController = SignUpViewController()
 //        let rootViewController = ServicesViewController()
+//        let rootViewController = ServiceDetailViewController()
 		
 		
 		let navigationController = UINavigationController(rootViewController: rootViewController)

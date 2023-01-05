@@ -93,6 +93,22 @@ class ServicesViewController: BaseViewController, UICollectionViewDelegate, UICo
 		present(serviceViewController, animated: true, completion: nil)
 	}
 	
+	func presentDetail(service: Service) {
+		let serviceDetailViewController = ServiceDetailViewController()
+		
+		serviceDetailViewController.service = service
+		
+		serviceDetailViewController.modalPresentationStyle = .pageSheet
+
+		if let sheet = serviceDetailViewController.sheetPresentationController {
+			sheet.detents = [.medium()]
+			sheet.preferredCornerRadius = 30
+			sheet.prefersGrabberVisible = true
+		}
+		
+		present(serviceDetailViewController, animated: true, completion: nil)
+	}
+	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return serviceViewModel.getServices().filter({ service in
 			service.userEmail == UserViewModel.shared.getUser()?.email
@@ -129,6 +145,11 @@ class ServicesViewController: BaseViewController, UICollectionViewDelegate, UICo
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		collectionView.deselectItem(at: indexPath, animated: true)
-		print("\(indexPath.item)")
+		
+		let service = serviceViewModel.getServices().filter({ service in
+			service.userEmail == UserViewModel.shared.getUser()?.email
+		})[indexPath.item]
+		
+		presentDetail(service: service)
 	}
 }

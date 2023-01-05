@@ -26,7 +26,7 @@ class ServiceCollectionViewCell: UICollectionViewCell {
 			}
 			
 			let formatter = DateFormatter()
-			formatter.dateFormat = "dd/MM/yyyy - hh:mm"
+			formatter.dateFormat = "dd/MM/yyyy - HH:mm"
 			let dateString = formatter.string(from: service!.start)
 			
 			dateLabel.text = dateString

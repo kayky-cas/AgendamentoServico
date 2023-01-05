@@ -91,9 +91,9 @@ class SignUpView: UIView {
         signUpButton.anchorCenterX(to: centerXAnchor)
     }
 
-    func onChange() {
+	func onChange() {
 		signUpButton.isEnabled = userFormView.isValid && addressFormView.isValid && loginFormView.isValid
-    }
+	}
 	
 	@objc func signUpButtonTouchUpInside() {
 		let user = User(
@@ -101,12 +101,14 @@ class SignUpView: UIView {
 			birthDate: userFormView.birthDatePicker.date,
 			cpf: userFormView.cpfTextField.text!,
 			rg: userFormView.rgTextField.text!,
-			street: addressFormView.streetTextField.text!,
-			district: addressFormView.districtTextField.text!,
-			city: addressFormView.cityTextField.text!,
-			cep: addressFormView.cepTextField.text!,
-			state: addressFormView.stateTextField.text!,
-			country: addressFormView.countryTextField.text!,
+			address: .init(
+				street: addressFormView.streetTextField.text!,
+				district: addressFormView.districtTextField.text!,
+				city: addressFormView.cityTextField.text!,
+				cep: addressFormView.cepTextField.text!,
+				state: addressFormView.stateTextField.text!,
+				country: addressFormView.countryTextField.text!
+			),
 			phone: userFormView.phoneTextField.text!,
 			email: loginFormView.emailTextField.text!,
 			password: loginFormView.passwordTextField.text!

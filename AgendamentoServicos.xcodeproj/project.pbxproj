@@ -37,6 +37,9 @@
 		4DFA56E02964697B009E774F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56DF2964697B009E774F /* ServicesViewController.swift */; };
 		4DFA56E329647350009E774F /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56E229647350009E774F /* ServiceCollectionViewCell.swift */; };
 		4DFA56E52965A181009E774F /* FormatterMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA56E42965A181009E774F /* FormatterMask.swift */; };
+		4DFA571C29670161009E774F /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA571B29670161009E774F /* ServiceDetailViewController.swift */; };
+		4DFA571F296701A7009E774F /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA571E296701A7009E774F /* ServiceDetailView.swift */; };
+		4DFA57212967071F009E774F /* AddressInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA57202967071F009E774F /* AddressInfoLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		4DFA56DF2964697B009E774F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		4DFA56E229647350009E774F /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DFA56E42965A181009E774F /* FormatterMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterMask.swift; sourceTree = "<group>"; };
+		4DFA571B29670161009E774F /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		4DFA571E296701A7009E774F /* ServiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailView.swift; sourceTree = "<group>"; };
+		4DFA57202967071F009E774F /* AddressInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressInfoLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +110,13 @@
 		4DBF835E2962FF40002F5114 /* AgendamentoServicos */ = {
 			isa = PBXGroup;
 			children = (
-				4DBF837C2962FF5F002F5114 /* Delegate */,
 				4DBF83752962FF5F002F5114 /* Model */,
-				4DBF83772962FF5F002F5114 /* Resource */,
-				4DBF83732962FF5F002F5114 /* Storyboard */,
-				4DBF837F2962FF5F002F5114 /* Util */,
-				4DBF83812962FF60002F5114 /* View */,
 				4DBF837A2962FF5F002F5114 /* ViewModel */,
+				4DBF83812962FF60002F5114 /* View */,
+				4DBF837F2962FF5F002F5114 /* Util */,
+				4DBF83732962FF5F002F5114 /* Storyboard */,
+				4DBF837C2962FF5F002F5114 /* Delegate */,
+				4DBF83772962FF5F002F5114 /* Resource */,
 				4DBF836D2962FF40002F5114 /* Info.plist */,
 			);
 			path = AgendamentoServicos;
@@ -173,12 +179,13 @@
 		4DBF83812962FF60002F5114 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4DFA56E129647336009E774F /* Services */,
-				4DBF83A8296351A2002F5114 /* Service */,
-				4DBF83A729635178002F5114 /* Login */,
-				4DBF83A629635167002F5114 /* Home */,
-				4DBF83A529635146002F5114 /* SignUp */,
 				4DBF83832962FF60002F5114 /* Controller */,
+				4DBF83A729635178002F5114 /* Login */,
+				4DBF83A529635146002F5114 /* SignUp */,
+				4DBF83A629635167002F5114 /* Home */,
+				4DFA56E129647336009E774F /* Services */,
+				4DFA571D29670186009E774F /* ServiceDetail */,
+				4DBF83A8296351A2002F5114 /* Service */,
 				4DBF83872962FF60002F5114 /* BaseUITextField.swift */,
 				4DBF838B2962FF60002F5114 /* WaveView.swift */,
 			);
@@ -194,6 +201,7 @@
 				4DBF839F2963343D002F5114 /* HomeViewController.swift */,
 				4DBF83AB296351C8002F5114 /* ServiceViewController.swift */,
 				4DFA56DF2964697B009E774F /* ServicesViewController.swift */,
+				4DFA571B29670161009E774F /* ServiceDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +249,15 @@
 				4DFA56E229647350009E774F /* ServiceCollectionViewCell.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4DFA571D29670186009E774F /* ServiceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4DFA571E296701A7009E774F /* ServiceDetailView.swift */,
+				4DFA57202967071F009E774F /* AddressInfoLabel.swift */,
+			);
+			path = ServiceDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,8 @@
 				4DBF839B2962FF60002F5114 /* UserFormView.swift in Sources */,
 				4DFA56E329647350009E774F /* ServiceCollectionViewCell.swift in Sources */,
 				4DBF83A02963343D002F5114 /* HomeViewController.swift in Sources */,
+				4DFA571C29670161009E774F /* ServiceDetailViewController.swift in Sources */,
+				4DFA571F296701A7009E774F /* ServiceDetailView.swift in Sources */,
 				4DFA56DC29645634009E774F /* ServiceRespositoryMock.swift in Sources */,
 				4DBF83942962FF60002F5114 /* UIView+Extension.swift in Sources */,
 				4DBF83952962FF60002F5114 /* LoginView.swift in Sources */,
@@ -337,6 +356,7 @@
 				4DBF839E2962FF60002F5114 /* SignUpView.swift in Sources */,
 				4DFA56DE29645CFE009E774F /* ServiceFormView.swift in Sources */,
 				4DBF839A2962FF60002F5114 /* AddressFormView.swift in Sources */,
+				4DFA57212967071F009E774F /* AddressInfoLabel.swift in Sources */,
 				4DFA56D8296454E5009E774F /* Service.swift in Sources */,
 				4DFA56DA296455B8009E774F /* ServiceViewModel.swift in Sources */,
 				4DBF83982962FF60002F5114 /* LoginViewController.swift in Sources */,
@@ -468,6 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9B7R9744Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AgendamentoServicos/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agendamento;
@@ -496,6 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9B7R9744Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AgendamentoServicos/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Agendamento;
